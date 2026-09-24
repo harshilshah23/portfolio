@@ -551,6 +551,403 @@ body.home-single-screen {
   border: 1px solid var(--border-subtle);
 }
 
+/* ==========================================================================
+   DEEP EDITORIAL CASE STUDIES SYSTEM
+   ========================================================================== */
+
+.case-study-index-section {
+  margin-bottom: 56px;
+  background: rgba(14, 14, 20, 0.75);
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  padding: 24px 28px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.index-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  color: var(--text-dim);
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 12px;
+}
+
+.index-title {
+  color: #fff;
+  font-weight: 600;
+}
+
+.index-hint {
+  color: var(--accent-cyan);
+}
+
+.case-study-index-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 12px;
+}
+
+.index-card-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  background: rgba(22, 22, 30, 0.65);
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.22s ease;
+}
+
+.index-card-link:hover {
+  background: rgba(36, 36, 48, 0.92);
+  border-color: rgba(255, 255, 255, 0.28);
+  transform: translateY(-2px);
+}
+
+.idx-num {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--accent-cyan);
+  font-weight: 600;
+}
+
+.idx-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.idx-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.01em;
+}
+
+.idx-cat {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 2px;
+}
+
+.idx-metric {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--accent-emerald);
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.22);
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+}
+
+/* Deep Case Study Card & Split Layout */
+.deep-case-card {
+  margin-bottom: 80px;
+  padding: 48px;
+  background: rgba(14, 14, 20, 0.82);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  position: relative;
+  scroll-margin-top: 100px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.deep-case-card:hover {
+  border-color: rgba(255, 255, 255, 0.24);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+}
+
+.deep-case-split-layout {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.case-sidebar-summary {
+  position: sticky;
+  top: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.case-pullquote-card {
+  background: rgba(56, 189, 248, 0.04);
+  border-left: 3px solid var(--accent-cyan);
+  border-radius: 0 8px 8px 0;
+  padding: 16px 18px;
+  font-size: 0.95rem;
+  color: #f1f5f9;
+  line-height: 1.6;
+}
+
+.case-pullquote-card em {
+  font-style: normal;
+  color: #e2e8f0;
+}
+
+.case-stats-vertical-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 16px 18px;
+}
+
+.stat-item-v {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 8px;
+}
+
+.stat-item-v:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.stat-val-v {
+  font-family: var(--font-mono);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.stat-lbl-v {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* Narrative Story Styling */
+.case-story-content {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.story-section-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.story-tag-sub {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--accent-cyan);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.story-heading {
+  font-family: var(--font-sans);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+}
+
+/* Visual System Flow & Diagrams */
+.diagram-flow-box {
+  background: rgba(18, 18, 26, 0.85);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  border-radius: 8px;
+  padding: 22px;
+  margin: 12px 0;
+}
+
+.diagram-title {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--accent-cyan);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.flow-step-sequence {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.flow-step-card {
+  flex: 1;
+  min-width: 130px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  padding: 12px;
+}
+
+.flow-step-card.active-step {
+  border-color: rgba(56, 189, 248, 0.45);
+  background: rgba(56, 189, 248, 0.06);
+}
+
+.fsc-num {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--accent-cyan);
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.fsc-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.3;
+}
+
+.fsc-desc {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+  line-height: 1.4;
+}
+
+.flow-arrow {
+  color: var(--text-dim);
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+}
+
+/* 7-Pillars Table */
+.pillar-table-wrapper {
+  overflow-x: auto;
+  margin: 12px 0;
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+}
+
+.pillar-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  text-align: left;
+}
+
+.pillar-table th {
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-dim);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.pillar-table td {
+  padding: 11px 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  color: var(--text-muted);
+  vertical-align: top;
+  font-size: 0.82rem;
+}
+
+.pillar-table tr:hover td {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.pillar-name-cell {
+  font-weight: 600;
+  color: #fff;
+  white-space: nowrap;
+}
+
+/* Stepper Cards */
+.stepper-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin: 12px 0;
+}
+
+.stepper-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-subtle);
+  border-top: 3px solid var(--accent-cyan);
+  border-radius: 6px;
+  padding: 14px;
+}
+
+.stepper-num {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--accent-cyan);
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.stepper-title {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.stepper-desc {
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+@media (max-width: 1024px) {
+  .deep-case-split-layout {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .case-sidebar-summary {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .deep-case-card {
+    padding: 28px 18px;
+  }
+  .flow-step-sequence {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .flow-arrow {
+    text-align: center;
+    transform: rotate(90deg);
+  }
+  .stepper-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* 02 — WRITING DECK */
 .writing-overview-strip {
   display: flex;
