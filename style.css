@@ -278,17 +278,34 @@ body {
 }
 
 .hero-desc {
-  max-width: 580px;
+  max-width: 680px;
   font-size: 1.15rem;
   font-weight: 400;
   color: var(--text-muted);
   line-height: 1.65;
-  margin-bottom: 48px;
+  margin-bottom: 24px;
 }
 
-.hero-desc strong {
+.hero-capability-line {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-cyan);
+  background: rgba(56, 189, 248, 0.05);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  padding: 7px 18px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 48px;
+  width: fit-content;
+}
+
+.hero-capability-line span {
+  font-weight: 500;
   color: #fff;
-  font-weight: 600;
 }
 
 .hero-footer {
