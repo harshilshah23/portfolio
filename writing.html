@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Writing Deck &amp; Research Archive — Harshil Shah</title>
+  <meta name="description" content="Over 250+ published research pieces, blogs, and deep dives on Real World Assets, onchain data analytics, and enterprise data systems.">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+  <!-- WebGL Generative Background -->
+  <canvas id="webglCanvas"></canvas>
+  <div class="vignette-overlay"></div>
+
+  <!-- Micro-Navigation Header -->
+  <header class="site-header">
+    <a href="index.html" class="brand-block">
+      <div class="brand-name">
+        <span class="status-dot"></span>
+        <span>Harshil Shah</span>
+      </div>
+      <div class="brand-meta">WRITER / BUILDER / OPERATOR</div>
+    </a>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="case-studies.html">Work</a></li>
+        <li><a href="writing.html" class="active">Writing</a></li>
+        <li><a href="kol-stack.html">KOL Stack</a></li>
+        <li><a href="builder-hub.html">Builder's Hub</a></li>
+        <li><a href="social.html">Social</a></li>
+        <li><a href="ads.html">Ad Copies</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="content-wrapper">
+    <main class="branch-layout">
+      
+      <a href="index.html" class="branch-nav-back">
+        &larr; Back to Directory
+      </a>
+
+      <div class="branch-hero-header">
+        <div class="branch-category-tag">02 // RESEARCH &bull; ESSAYS &bull; PUBLICATIONS</div>
+        <h1 class="branch-title">The Writing Deck</h1>
+        <p class="branch-lead">
+          Over <strong>250+ long-form articles, deep research reports, and technical guides</strong> published across leading analytics protocols, data governance enterprises, and Web3 publications.
+        </p>
+      </div>
+
+      <div class="writing-overview-strip">
+        <div class="writing-metric">
+          <span class="writing-metric-num">250+</span>
+          <span class="writing-metric-text">Articles Written</span>
+        </div>
+        <div class="writing-metric">
+          <span class="writing-metric-num">30+</span>
+          <span class="writing-metric-text">Protocols &amp; Publications</span>
+        </div>
+        <div class="writing-metric">
+          <span class="writing-metric-num">RWA</span>
+          <span class="writing-metric-text">Specialized Focus</span>
+        </div>
+      </div>
+
+      <!-- Filter Bar -->
+      <div class="filter-tabs-bar">
+        <button class="filter-chip active" onclick="filterCategory('all', this)">All Publications</button>
+        <button class="filter-chip" onclick="filterCategory('rwa', this)">Real World Assets (RWA)</button>
+        <button class="filter-chip" onclick="filterCategory('data', this)">Data Systems</button>
+        <button class="filter-chip" onclick="filterCategory('macro', this)">Macro &amp; Markets</button>
+      </div>
+
+      <!-- Articles Ledger Table -->
+      <div class="writing-table">
+        
+        <!-- Article 1: Bitquery S&P 500 -->
+        <a href="https://bitquery.io/blog/get-sp500-onchain-data" target="_blank" rel="noopener" class="writing-row" data-category="rwa">
+          <div class="w-idx">01</div>
+          <div class="w-title-wrap">
+            <div class="w-title">How to Get S&P 500 Onchain Data</div>
+            <div class="w-desc">Analyzing S&P 50 stocks represented as Real World Assets (RWA) within the Web3 ecosystem, focusing on holder concentration, trading velocity, and cross-chain transfer statistics.</div>
+          </div>
+          <div class="w-pub">Bitquery</div>
+          <div class="w-tag">RWA &bull; Analytics</div>
+          <div class="w-arrow">&rarr;</div>
+        </a>
+
+        <!-- Article 2: Bitquery Real Estate -->
+        <a href="https://bitquery.io/blog/tokenized-real-estate-transforming-property-investment" target="_blank" rel="noopener" class="writing-row" data-category="rwa">
+          <div class="w-idx">02</div>
+          <div class="w-title-wrap">
+            <div class="w-title">Tokenized Real Estate: Transforming How We Invest in Property</div>
+            <div class="w-desc">Deconstructing fractional property ownership architectures, legal wrapping structures, and onchain asset-backed token mechanics using real Bitquery ledger feeds.</div>
+          </div>
+          <div class="w-pub">Bitquery</div>
+          <div class="w-tag">RWA &bull; Markets</div>
+          <div class="w-arrow">&rarr;</div>
+        </a>
+
+        <!-- Article 3: Bitquery RWA Deep Dive -->
+        <a href="https://bitquery.io/blog/real-world-assets-changing-global-finance-complete-research" target="_blank" rel="noopener" class="writing-row" data-category="rwa">
+          <div class="w-idx">03</div>
+          <div class="w-title-wrap">
+            <div class="w-title">Real-World Assets Are Changing Global Finance: Complete Research Deep Dive</div>
+            <div class="w-desc">Comprehensive institutional breakdown exploring how sovereign debt, private credit, and traditional equity markets are transitioning to decentralized rails.</div>
+          </div>
+          <div class="w-pub">Bitquery</div>
+          <div class="w-tag">Macro &bull; Research</div>
+          <div class="w-arrow">&rarr;</div>
+        </a>
+
+        <!-- Article 4: Atlan Data Management 101 -->
+        <a href="https://atlan.com/data-management-101/" target="_blank" rel="noopener" class="writing-row" data-category="data">
+          <div class="w-idx">04</div>
+          <div class="w-title-wrap">
+            <div class="w-title">Data Management 101: Four Things Every Human of Data Should Know</div>
+            <div class="w-desc">Architectural practices, pipeline reliability frameworks, and cataloging mechanisms to ensure unified data access across enterprise data meshes.</div>
+          </div>
+          <div class="w-pub">Atlan</div>
+          <div class="w-tag">Data Systems</div>
+          <div class="w-arrow">&rarr;</div>
+        </a>
+
+        <!-- Article 5: Atlan Rigorous Data Management -->
+        <a href="https://atlan.com/rigorous-data-management/" target="_blank" rel="noopener" class="writing-row" data-category="data">
+          <div class="w-idx">05</div>
+          <div class="w-title-wrap">
+            <div class="w-title">Rigorous Data Management: How to Go About It in Modern Architectures</div>
+            <div class="w-desc">A deep dive into high-fidelity data governance, lineage tracking, metadata automation, and maintaining trust in mission-critical data pipelines.</div>
+          </div>
+          <div class="w-pub">Atlan</div>
+          <div class="w-tag">Data Systems</div>
+          <div class="w-arrow">&rarr;</div>
+        </a>
+
+        <!-- Article 6: CoinGabbar Digital Currencies -->
+        <a href="https://www.coingabbar.com/en/crypto-blogs-details/what-is-keeping-away-nigerians-from-africas-first-digital-currency" target="_blank" rel="noopener" class="writing-row" data-category="macro">
+          <div class="w-idx">06</div>
+          <div class="w-title-wrap">
+            <div class="w-title">Why Are Nigerians Refusing to Use Africa's First Digital Currency?</div>
+            <div class="w-desc">Socio-economic case study examining the friction points, monetary trust dilemmas, and local market adoption realities of state-issued CBDCs.</div>
+          </div>
+          <div class="w-pub">CoinGabbar</div>
+          <div class="w-tag">Macro &bull; CBDC</div>
+          <div class="w-arrow">&rarr;</div>
+        </a>
+
+      </div>
+
+      <div class="section-cta-strip" style="margin-top: 60px;">
+        <a href="builder-hub.html" class="view-branch-btn">
+          <span>Explore Builder's Hub &rarr;</span>
+        </a>
+      </div>
+
+    </main>
+
+    <footer class="site-footer">
+      <div>HARSHIL SHAH &copy; 2026</div>
+      <div>RESEARCH &bull; WRITING &bull; ESSAYS</div>
+    </footer>
+  </div>
+
+  <script>
+    function filterCategory(cat, btn) {
+      document.querySelectorAll('.filter-chip').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const rows = document.querySelectorAll('.writing-row');
+      rows.forEach(r => {
+        if (cat === 'all' || r.getAttribute('data-category') === cat) {
+          r.style.display = 'grid';
+        } else {
+          r.style.display = 'none';
+        }
+      });
+    }
+  </script>
+  <script src="experience.js"></script>
+</body>
+</html>

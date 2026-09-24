@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Builder's Hub &amp; Experiments — Harshil Shah</title>
+  <meta name="description" content="Decentralized applications, algorithmic trading engines, Telegram market intelligence bots, and smart contracts built by Harshil Shah.">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+  <!-- WebGL Generative Background -->
+  <canvas id="webglCanvas"></canvas>
+  <div class="vignette-overlay"></div>
+
+  <!-- Micro-Navigation Header -->
+  <header class="site-header">
+    <a href="index.html" class="brand-block">
+      <div class="brand-name">
+        <span class="status-dot"></span>
+        <span>Harshil Shah</span>
+      </div>
+      <div class="brand-meta">WRITER / BUILDER / OPERATOR</div>
+    </a>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="case-studies.html">Work</a></li>
+        <li><a href="writing.html">Writing</a></li>
+        <li><a href="kol-stack.html">KOL Stack</a></li>
+        <li><a href="builder-hub.html" class="active">Builder's Hub</a></li>
+        <li><a href="social.html">Social</a></li>
+        <li><a href="ads.html">Ad Copies</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="content-wrapper">
+    <main class="branch-layout">
+      
+      <a href="index.html" class="branch-nav-back">
+        &larr; Back to Directory
+      </a>
+
+      <div class="branch-hero-header">
+        <div class="branch-category-tag">04 // OPEN SOURCE &bull; PROTOTYPES &bull; EXPERIMENTS</div>
+        <h1 class="branch-title">Builder's Hub</h1>
+        <p class="branch-lead">
+          I don't just market products—I engineer, prototype, and build them. Understanding smart contract mechanics, quantitative pipelines, and developer tooling enables me to market with absolute conviction.
+        </p>
+      </div>
+
+      <!-- Flagship Build: hirys.fun -->
+      <div class="builder-showcase" style="margin-bottom: 48px;">
+        <div class="builder-info">
+          <div class="builder-pill">
+            <span>&bull;</span> LIVE EXPERIMENT
+          </div>
+          <h2 class="builder-title">hirys.fun</h2>
+          <p class="builder-desc">
+            A pump-style memepad built on the Irys network. Designed to experiment with decentralized storage, fair-launch token mechanics, bonding curve liquidity, and community gamification.
+          </p>
+
+          <div class="builder-metrics-strip">
+            <div class="b-metric">
+              <h3>1,000+</h3>
+              <span>Users in Week 1</span>
+            </div>
+            <div class="b-metric">
+              <h3>20,000</h3>
+              <span>$IRYS Testnet Tokens</span>
+            </div>
+            <div class="b-metric">
+              <h3>Supported</h3>
+              <span>By Irys Team</span>
+            </div>
+          </div>
+
+          <div class="builder-actions">
+            <a href="http://hirys.fun" target="_blank" rel="noopener" class="btn-primary">Launch hirys.fun &rarr;</a>
+            <a href="https://x.com/hirysdotfun" target="_blank" rel="noopener" class="btn-outline">Project Updates</a>
+          </div>
+        </div>
+
+        <div class="terminal-box">
+          <div class="terminal-bar">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+          <div class="terminal-content">
+            <p><span class="highlight">$</span> git status --short</p>
+            <p>M src/contracts/BondingCurve.sol</p>
+            <p>M src/services/IrysBundler.ts</p>
+            <p><span class="highlight">$</span> testnet deployment --network irys</p>
+            <p>&gt; Connected to Irys datastream</p>
+            <p>&gt; 1,000+ active wallet addresses recorded</p>
+            <p>&gt; Leaderboard &amp; airdrop farming operational</p>
+            <p>&gt; Status: <span class="highlight">Active Development</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional Open-Source Systems from GitHub -->
+      <div class="branch-hero-header" style="margin-top: 56px; margin-bottom: 24px;">
+        <h2 style="font-size: 1.8rem; font-weight: 700; color: #fff;">Open Source Codebases &amp; Systems</h2>
+      </div>
+
+      <div class="builder-projects-grid">
+
+        <!-- Project 1: telegram-market-bot -->
+        <div class="builder-subcard">
+          <div class="builder-card-top">
+            <div class="builder-card-header">
+              <span class="builder-badge js">Node.js · Finance Engine</span>
+              <span class="builder-lang-tag">JavaScript</span>
+            </div>
+            <h3 class="builder-card-title">Telegram Market Intelligence Bot</h3>
+            <p class="builder-card-desc">
+              Production-grade market terminal on Telegram delivering instantaneous quotes, momentum metrics, and synthesized macroeconomic catalysts across crypto and equities.
+            </p>
+            <ul class="builder-feature-list">
+              <li>Multi-asset support: Crypto (Binance), Equities, Indices &amp; ETFs (Yahoo Finance Chart API).</li>
+              <li>Dual-mode synthesis: Free deterministic financial heuristics + optional Gemini 2.5 Flash editorial analysis.</li>
+              <li>Real-time RSS news aggregation with Jaccard token similarity deduplication.</li>
+              <li>Zero-dependency public endpoints with interactive Telegram inline keyboards.</li>
+            </ul>
+          </div>
+          <div class="builder-card-bottom">
+            <span class="builder-lang-tag">github.com/harshilshah23/telegram-market-bot</span>
+            <a href="https://github.com/harshilshah23/telegram-market-bot" target="_blank" rel="noopener" class="builder-card-link">View Repo &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Project 2: crypto-news-bot -->
+        <div class="builder-subcard">
+          <div class="builder-card-top">
+            <div class="builder-card-header">
+              <span class="builder-badge js">Pipeline · NLP Curation</span>
+              <span class="builder-lang-tag">Node.js / RSS</span>
+            </div>
+            <h3 class="builder-card-title">Crypto News Signal Engine</h3>
+            <p class="builder-card-desc">
+              Hyper-focused news intelligence bot engineered to monitor, filter, deduplicate, and continuously broadcast high-signal crypto insights without noise.
+            </p>
+            <ul class="builder-feature-list">
+              <li>Multi-stream ingestion across NewsAPI, CoinDesk RSS, Google News, and Yahoo Finance.</li>
+              <li>Multi-factor filtering engine rejecting clickbait, price spam, and stale publications.</li>
+              <li>Editorial bias classification (🟢 Bullish / 🔴 Bearish / ⚪ Neutral) with "Why It Matters" briefs.</li>
+              <li>Rolling 48-hour cross-outlet cluster deduplication store.</li>
+            </ul>
+          </div>
+          <div class="builder-card-bottom">
+            <span class="builder-lang-tag">github.com/harshilshah23/crypto-news-bot</span>
+            <a href="https://github.com/harshilshah23/crypto-news-bot" target="_blank" rel="noopener" class="builder-card-link">View Repo &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Project 3: EMA-SMA-crossover-vs-HODL-strategy -->
+        <div class="builder-subcard">
+          <div class="builder-card-top">
+            <div class="builder-card-header">
+              <span class="builder-badge python">Quant · Backtesting</span>
+              <span class="builder-lang-tag">Python</span>
+            </div>
+            <h3 class="builder-card-title">EMA/SMA Crossover vs HODL Strategy</h3>
+            <p class="builder-card-desc">
+              Algorithmic trading model and backtesting engine comparing trend-following moving average crossover systems against long-term buy-and-hold benchmarks.
+            </p>
+            <ul class="builder-feature-list">
+              <li>Calculates 20-period short-term EMA cross over 100-period long-term SMA with dynamic position shifts.</li>
+              <li>Automated risk controls featuring a -5% cumulative drawdown stop-loss safeguard.</li>
+              <li>Quantitative risk metrics: Sharpe Ratio (annualized over 252 days) and Maximum Drawdown analysis.</li>
+              <li>Matplotlib visualization of portfolio equity curves, entry/exit triangles, and price volatility.</li>
+            </ul>
+          </div>
+          <div class="builder-card-bottom">
+            <span class="builder-lang-tag">github.com/harshilshah23/EMA-SMA-crossover...</span>
+            <a href="https://github.com/harshilshah23/EMA-SMA-crossover-vs-HODL-strategy" target="_blank" rel="noopener" class="builder-card-link">View Repo &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Project 4: ERC-20-token -->
+        <div class="builder-subcard">
+          <div class="builder-card-top">
+            <div class="builder-card-header">
+              <span class="builder-badge solidity">Web3 · Smart Contracts</span>
+              <span class="builder-lang-tag">Solidity</span>
+            </div>
+            <h3 class="builder-card-title">ERC-20 Token Architecture</h3>
+            <p class="builder-card-desc">
+              Standard-compliant fungible smart contract implementation built using audited OpenZeppelin primitives, designed for verifiable onchain transfers.
+            </p>
+            <ul class="builder-feature-list">
+              <li>Built on top of OpenZeppelin ERC-20 security standards.</li>
+              <li>Configurable initial supply, decimals, and gas-optimized transaction mechanics.</li>
+              <li>Deployed and verified on EVM testnet environments using Remix and Truffle.</li>
+            </ul>
+          </div>
+          <div class="builder-card-bottom">
+            <span class="builder-lang-tag">github.com/harshilshah23/ERC-20-token</span>
+            <a href="https://github.com/harshilshah23/ERC-20-token" target="_blank" rel="noopener" class="builder-card-link">View Repo &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Project 5: BingX-GITB (Agentic Trader) -->
+        <div class="builder-subcard">
+          <div class="builder-card-top">
+            <div class="builder-card-header">
+              <span class="builder-badge python">AI Agents · Multi-Agent Trading</span>
+              <span class="builder-lang-tag">Python / FastAPI</span>
+            </div>
+            <h3 class="builder-card-title">BingX Agentic Trader Engine</h3>
+            <p class="builder-card-desc">
+              Autonomous multi-agent algorithmic trading architecture integrating specialized orchestrator agents, real-time market monitoring, risk management tooling, and exchange execution pipelines.
+            </p>
+            <ul class="builder-feature-list">
+              <li>Multi-agent orchestration system coordinating analyst, risk, and execution subagents.</li>
+              <li>Modular agent memory, state management, and strategy routers built on FastAPI.</li>
+              <li>Autonomous live exchange market monitoring and automated order lifecycle safeguards.</li>
+            </ul>
+          </div>
+          <div class="builder-card-bottom">
+            <span class="builder-lang-tag">github.com/harshilshah23/BingX-GITB</span>
+            <a href="https://github.com/harshilshah23/BingX-GITB" target="_blank" rel="noopener" class="builder-card-link">View Repo &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Project 6: Infer3 -->
+        <div class="builder-subcard">
+          <div class="builder-card-top">
+            <div class="builder-card-header">
+              <span class="builder-badge research">Decentralized AI · Compute</span>
+              <span class="builder-lang-tag">Web3 / AI</span>
+            </div>
+            <h3 class="builder-card-title">Infer3 — Decentralized AI Inference</h3>
+            <p class="builder-card-desc">
+              Infrastructure and coordination protocols exploring decentralized artificial intelligence inference, distributed model execution, and verifiable compute verification.
+            </p>
+            <ul class="builder-feature-list">
+              <li>Architectures for distributed machine learning model inference across decentralized nodes.</li>
+              <li>Verifiable inference protocols and cryptographic compute validation mechanics.</li>
+              <li>Incentive layer alignment for decentralized GPU compute providers and consumers.</li>
+            </ul>
+          </div>
+          <div class="builder-card-bottom">
+            <span class="builder-lang-tag">github.com/harshilshah23/Infer3</span>
+            <a href="https://github.com/harshilshah23/Infer3" target="_blank" rel="noopener" class="builder-card-link">View Repo &rarr;</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Technical Stack Matrix -->
+      <div class="branch-hero-header" style="margin-top: 56px; margin-bottom: 24px;">
+        <h2 style="font-size: 1.8rem; font-weight: 700; color: #fff;">Technical &amp; Analytical Stack</h2>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+        <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: 8px; padding: 28px;">
+          <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-cyan); text-transform: uppercase; margin-bottom: 10px;">DATA &amp; QUANTITATIVE</div>
+          <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.6;">
+            Python, SQL, Pandas, Matplotlib, Power BI, Excel, Tableau, Teradata, Ab-Initio, Unix shell scripting.
+          </p>
+        </div>
+
+        <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: 8px; padding: 28px;">
+          <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-purple); text-transform: uppercase; margin-bottom: 10px;">SMART CONTRACTS &amp; WEB3</div>
+          <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.6;">
+            Solidity, OpenZeppelin, Remix, Truffle, Web3.js, Irys Network, EVM (Arbitrum, Polygon, Ethereum, BSC).
+          </p>
+        </div>
+
+        <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: 8px; padding: 28px;">
+          <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-amber); text-transform: uppercase; margin-bottom: 10px;">ONCHAIN INTELLIGENCE</div>
+          <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.6;">
+            Dune Analytics, Arkham Intelligence, Bitquery, DEXTools, DexGuru, CoinGecko Terminal, Etherscan.
+          </p>
+        </div>
+      </div>
+
+      <div class="section-cta-strip" style="margin-top: 60px;">
+        <a href="writing.html" class="view-branch-btn">
+          <span>Read Research &amp; Writing Deck &rarr;</span>
+        </a>
+      </div>
+
+    </main>
+
+    <footer class="site-footer">
+      <div>HARSHIL SHAH &copy; 2026</div>
+      <div>BUILDER'S HUB &bull; OPEN SOURCE</div>
+    </footer>
+  </div>
+
+  <script src="experience.js"></script>
+</body>
+</html>
